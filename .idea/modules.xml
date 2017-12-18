@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MVPDemo.iml" filepath="$PROJECT_DIR$/MVPDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dagger 2 Demo.iml" filepath="$PROJECT_DIR$/Dagger 2 Demo.iml" />
+      <module fileurl="file://C:\Users\ratha\Documents\android app\Dagger 2 Demo\MVPDemo.iml" filepath="C:\Users\ratha\Documents\android app\Dagger 2 Demo\MVPDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\ratha\Documents\android app\Dagger 2 Demo\app\app.iml" filepath="C:\Users\ratha\Documents\android app\Dagger 2 Demo\app\app.iml" />
     </modules>
   </component>
 </project>

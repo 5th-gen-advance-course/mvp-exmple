@@ -17,6 +17,7 @@ public interface Presenter {
     interface LoginPresenter{
         void onDestroyView();
         void onLoginCredential(String userName,String pass);
+        void setView(LoginView loginView);
     }
 
 

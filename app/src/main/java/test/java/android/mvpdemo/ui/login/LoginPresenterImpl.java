@@ -1,5 +1,7 @@
 package test.java.android.mvpdemo.ui.login;
 
+import javax.inject.Inject;
+
 /**
  * Created by Asus on 12/15/2017.
  */
@@ -8,11 +10,19 @@ public class LoginPresenterImpl implements Presenter.LoginPresenter,
         LoginInteractor.LoginResponseInteractor {
 
     public Presenter.LoginView view;
+
     LoginInteractor interactor;
     //public
-    public LoginPresenterImpl(Presenter.LoginView loginView){
+
+
+    public void setView(Presenter.LoginView loginView){
         this.view=loginView;
-        interactor=new LoginInteractorImpl();
+    }
+
+    //constructer inject
+    @Inject
+    public LoginPresenterImpl(LoginInteractor loginInteractor){
+        interactor=loginInteractor;
     }
     @Override
     public void onDestroyView() {
