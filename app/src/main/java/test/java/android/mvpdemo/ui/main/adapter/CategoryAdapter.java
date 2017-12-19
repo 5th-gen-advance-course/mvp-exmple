@@ -21,8 +21,22 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryViewHolder> {
 
     Context context;
     List<Category> list;
-    public CategoryAdapter(Context context){
+    @Inject
+    public CategoryAdapter(Context context,List<Category> list){
         this.context =context;
+        this.list=list;
+    }
+
+    public void setCategory(Category category){
+        if (null !=category){
+            this.list.add(category);
+            notifyItemInserted(this.list.size()-1);
+        }
+    }
+
+    public void setList(List<Category> list) {
+        this.list = list;
+        notifyDataSetChanged();
     }
 
     @Override

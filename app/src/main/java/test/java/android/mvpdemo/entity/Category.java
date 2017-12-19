@@ -10,6 +10,11 @@ public class Category {
     private String phone;
     private int icon;
 
+    public Category(){}
+    public Category(String title,String phone,String url,int icon){
+        this.title=title;this.phone=phone;this.url=url;this.icon=icon;
+    }
+
 
     public String getTitle() {
         return title;

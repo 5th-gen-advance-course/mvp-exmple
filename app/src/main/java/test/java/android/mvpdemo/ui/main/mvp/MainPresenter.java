@@ -10,7 +10,7 @@ import test.java.android.mvpdemo.entity.Category;
 
 public interface MainPresenter {
 
-    void getCategories(List<Category> categories);
+    void getCategories();
     void onDestroyView();
     void setView(MainView mainView);
 }
